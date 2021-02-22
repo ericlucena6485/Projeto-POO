@@ -1,0 +1,71 @@
+//calsse conta
+packpage entidades;
+
+public class conta{
+  private int numero;
+  private String titular;
+  priivate double saldo;
+  
+    public conta(int numero, String titular){
+      this.numero - numero;
+      this.titular = titular;
+
+    }
+
+    public int getNumero(){
+      return numero;
+   }
+     public String getTitular(){
+      return titular;
+   }
+    public void setTitular(String titular){
+       this.titular = titular;
+   }	
+    public void deposito(double deposito){
+     saldo += valor;
+   }
+    public void saque(double valor){
+     saldo -= valor + 5.0;
+   }
+    
+    public String exibeDadosconta(){
+      return "Conta "
+               + numero
+	       + ", Titular: "
+               +  titular
+               + ", Saldo : R$ "
+               + String.format("%.2f", saldo);
+   }           
+    
+}
+//classe programa
+packpage aplicacao;
+
+import java.util.Scanner;
+
+public class Programa{
+   
+	public static void main(String[] args){
+
+            Scanner entrada = new Scanner(System.in);
+     
+            System.out.println("Entre co o numero da conta: ");
+	    int numero = entrada.nextInt();
+	   
+	    System.out.println("Entre com o nome do Titular: ");
+	    entrada.nextLine();
+	    String titular = entrada.nextLine();
+	    
+            System.out.println("Existe um deposito inicial? (s/n)");
+	    char resposta = entrada.next().charAt(0);
+
+ 	    if(resposta == 's'){
+		System.out,println("Insira o valor do ddeposito inicial: ");
+	        double depositoInicial = entrada.netxDouble();
+	        Conta conta = new Conta(numero, titular);
+                
+
+     }
+  }
+
+}
