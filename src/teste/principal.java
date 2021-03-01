@@ -38,31 +38,31 @@ public class principal {
 			switch( op ) {
 			
 			case 1 :
-				   login cadastro = new login();
-				   System.out.println("CADASTRO:");
+				login cadastro = new login();
+				System.out.println("CADASTRO:");
 				   
-				   System.out.println("Digite seu nome:");
-				   String nome = entrada.nextLine();
-				   cadastro.setNome(nome);
+				System.out.println("Digite seu nome:");
+				String nome = entrada.nextLine();
+				cadastro.setNome(nome);
 				   
-				   System.out.println("Digite seu email:");
-				   String e = entrada.nextLine();
-				   cadastro.setEmail(e);
-				   
-
-				   System.out.println("Digite uma senha:");
-				   String s = entrada.nextLine();
-				   cadastro.setSenha(s);
+				System.out.println("Digite seu email:");
+				String e = entrada.nextLine();
+				cadastro.setEmail(e);
 				   
 
-				   System.out.println("Digite seu endereço:");
-				   String end = entrada.nextLine();
-				   cadastro.setEndereco(end);
+				System.out.println("Digite uma senha:");
+				String s = entrada.nextLine();
+				cadastro.setSenha(s);
 				   
 
-				   System.out.println("Digite seu nome de usuário para entrar no Diário:");
-				   String u = entrada.nextLine();
-				   cadastro.setUsuario(u);
+				System.out.println("Digite seu endereço:");
+				String end = entrada.nextLine();
+				cadastro.setEndereco(end);
+				   
+
+				System.out.println("Digite seu nome de usuário para entrar no Diário:");
+				String u = entrada.nextLine();
+				cadastro.setUsuario(u);
 				   
 			     
 			       System.out.println("Deseja ir para seu diario?");
@@ -71,9 +71,7 @@ public class principal {
 			       
 			       
 			case 2:
-		
-			        i= entrada.nextInt();
-			       
+
 			       diario diario = new diario();
 			       System.out.println("Anote no seu diario");
 			       
