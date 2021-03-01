@@ -56,5 +56,15 @@ public class diario extends login {
 	public int getAno() {
 		return ano;
 	}
+	
+	public void gerarRelatorio() {
+		System.out.println("Você viajou para :"+getLocal_viagem());
+		System.out.println("Você pegou o voo:"+getVoo());
+		System.out.println("Viajou na data:"+ getDia() + "/" + getMes() + "/" + getAno());
+		System.out.println("Você avaliou a sua viajem como:" + getFeedback());
+		
+		
+		
+	}
 
 }
