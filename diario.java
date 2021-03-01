@@ -8,7 +8,7 @@ public class diario {
 	private int ano;
 	private String feedback;
 
-	public void setNome(String local_viagem) {
+	public void setLocal_viagem(String local_viagem) {
 		this.local_viagem = local_viagem;
 	}
 
