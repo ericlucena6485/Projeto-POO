@@ -72,43 +72,40 @@ public class principal {
 			       
 			case 2:
 		
+			        i= entrada.nextInt();
+			       
+			       diario diario = new diario();
+			       System.out.println("Anote no seu diario");
+			       
+			       System.out.println("Informe o local de viagem: ");
+			       String local_viagem = entrada.nextLine();
+			       diario.setLocal_viagem(local_viagem);
+			       
+			       System.out.println("Informe o seu voo: ");
+			       String voo = entrada.nextLine();
+			       diario.setVoo(voo);
+			       
+			       System.out.println("Informe a data da viagem nas proximas etapas ");
+			       
+			       
+			       System.out.println("Informe o dia do voo: ");
+			       int dia = entrada.nextInt();
+			       diario.setDia(dia);
+			       
+			       System.out.println("Informe o mes do voo: ");
+			       int mes = entrada.nextInt();
+			       diario.setMes(mes);
+			       
+			       System.out.println("Informe o ano do voo: ");
+			       int ano = entrada.nextInt();
+			       diario.setAno(ano);
+			       
+			       System.out.println("Como foi a viagem?: ");
+			       String feedback = entrada.nextLine();
+			       diario.setFeedback(feedback);
+			       
 			       System.out.println("Aperte 1 para continuar, caso contrário digite 2!");
 			       op=entrada.nextInt();
-					
-			       i= entrada.nextInt();
-					
-
-    
-    preenchimento diario = new preenchimento();
-    System.out.println("Anote no seu diario");
-    
-    System.out.println("Informe o local de viagem: ");
-    String local_viagem = entrada.nextLine();
-    diario.setLocal_viagem(local_viagem);
-    
-    System.out.println("Informe o seu voo: ");
-    String voo = entrada.nextLine();
-    diario.setVoo(voo);
-    
-    System.out.println("Informe a data da viagem nas proximas etapas ");
-    
-    
-    System.out.println("Informe o dia do voo: ");
-    Int dia = entrada.nextInt();
-    diario.setDia(dia);
-    
-    System.out.println("Informe o mes do voo: ");
-    String mes = entrada.nextInt();
-    diario.setMes(mes);
-    
-    System.out.println("Informe o ano do voo: ");
-    String ano = entrada.nextInt();
-    diario.setAno(ano);
-    
-    System.out.println("Como foi a viagem?: ");
-    String feedback = entrada.nextLine();
-    diario.setFeedabck(feedback);
-    
 			       
 			case 3:
 				 
